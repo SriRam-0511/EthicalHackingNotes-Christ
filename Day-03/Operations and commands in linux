@@ -1,1 +1,23 @@
 Basic Linux Commands:
+      => ls - Lists the files and directory contents
+      => cd - Changes the directory or Navigate between directories in the terminal
+      => pwd -  [stands for Print Working Directory] Shows the full absolute path of your current file or current directory in the terminal
+      => mkdir - Creates a new directory in the terminal
+      => rmdir - Removes or Deletes an empty directory from the filesystem
+      => touch - Creates a new empty file or update the timestamp of existing files
+      => rm - Removes a file or directory
+      => cp - Copies a file or directory
+      => mv - Moves or renames a file or directory
+      => man - [stands for manual] Opens the manual page for Linux commands and programs
+      => echo - Prints a line of text or a variable or a message to terminal
+      => chmod - Changes the file or directory permissions and can control on who can read, write, or execute a file
+      => chown - Changes the ownership of a file or directory
+      => ps - Lists the active or running processes [a snap (not real-time like top) and is very useful for process management and scripting]
+      => kill - Terminates the process by PID [Process ID]
+      => top - Real-time system monitoring tool that provides a dynamic view of the system’s processes
+      => df - Shows disk space usage for filesystems (hard drives, partitions, USBs, etc.)
+      => du - Shows file or directory size by estimation
+      => cat - Displays file(s) content, concatenate file(s), and create new file(s)
+      => nano - Edits a file in the terminal
+      => clear - Clears the terminal screen by removing all previous commands and output from view and gives a clean slate in the terminal window
+      => exit - Logs out from the terminal or closes the current terminal session
