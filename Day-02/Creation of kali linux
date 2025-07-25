@@ -1,1 +1,71 @@
+Kali Linux Setup:
+A quick reference for downloading and installing Kali Linux — the go-to distro for penetration testing and ethical hacking.
 
+1. Downloading Kali Linux from Official Download Page
+Go to the official Kali Linux download page or site:
+  => https://www.kali.org/get-kali/
+
+  a. For windows users:
+        Install Required Software:
+                => VirtualBox
+                => VMware Workstation Player (Optional)
+
+        Import Kali into VirtualBox: 
+                => Open VirtualBox
+                => Go to File -> Import Appliance
+                => Select the (.ova) file you downloaded
+                => Click Import
+                => Start the VM
+                [NOTE: Enable virtualization in BIOS if VM is slow or fails to start]
+  b. For Mac users:
+        => Option A: Using VirtualBox (Intel Macs)
+                Steps:
+                      => Install VirtualBox for macOS
+                      => Download (.ova) from Kali linux official site
+                      => Import via File -> Import Appliance
+                      => Adjust settings:
+                                        => RAM: 4GB+
+                                        => Video memory: 128MB
+                      => Start VM
+                [NOTE: M1 and M2 Macs do not support x86 VMs in VirtualBox. So use UTM for Apple Silicon]
+
+        => Option B: Apple Silicon (M1/M2/M3)
+                      => Use UTM
+                      => Download ARM image from Kali ARM images
+                      => Import (.img.xz) into UTM and configure
+
+2. Choose Your Version
+
+Pick the appropriate image depending on your use case:
+  a. "Regular Install" with extension (.iso) used for installation on hardware or virtual machines.
+  b. "Live Boot" with file extension (Live ISO)	used to run Kali without installing (with persistence optional).
+  c. "Virtual Machine (VM)" with file extension	(.ova) is used as a pre-built for VMware or VirtualBox.
+  d. "ARM Devices" with file extension (.img.xz) used for the usage of Raspberry Pi, Pinebook, etc.
+
+3. Installation Options
+  a. Virtual Machine (Recommended for Beginners)
+      =>Install VirtualBox or VMware Workstation.
+      =>Download the Kali VM .ova file.
+      =>Import it:
+                  VirtualBox: File -> Import Appliance
+                  VMware: Open -> Import OVF
+  b. Dual Boot or Full Install
+      =>Download the ISO.
+      =>Use Rufus (Windows) or Balena Etcher (Linux/macOS) to flash it to a USB drive.
+      =>Boot from USB and follow on-screen install instructions.
+
+4. Default Credentials
+      Username: kali
+      Password: kali
+      [NOTE:Change these immediately after installation]
+
+5. Useful Post-Install Commands
+      sudo apt update && sudo apt upgrade-y       (To update repositories)
+      sudo apt install nmap wireshark metasploit-framework-y      (To install popular tools)
+
+6. Tips for begginers
+      =>Enable Virtualization in BIOS for smooth VM performance.
+      =>Use Kali Lite for low-resource systems.
+      =>Keep your system updated regularly for security patches.
+
+{References : Chatgpt}
